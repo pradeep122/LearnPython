@@ -4,6 +4,8 @@
 
 ### Tutorials
 
+- [Python Tutorials for Beginners - Learn Python Online](https://www.youtube.com/watch?v=yE9v9rt6ziw)
+- [Learn Python 3 for Machine Learning & Web Development [2019] - Complete Python Tutorial](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
 - [Dive into Python](http://www.diveintopython3.net)
 - [Official Tutorial](https://docs.python.org/3/tutorial/index.html)
 - [A Byte of Python](https://python.swaroopch.com)
