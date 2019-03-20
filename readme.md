@@ -2,10 +2,16 @@
 
 ## Links to Resources
 
-### Tutorials
+### Video Tutorials
 
 - [Python Tutorials for Beginners - Learn Python Online](https://www.youtube.com/watch?v=yE9v9rt6ziw)
 - [Learn Python 3 for Machine Learning & Web Development [2019] - Complete Python Tutorial](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
+
+- [Python Cheatsheet](https://programmingwithmosh.com/python/python-3-cheat-sheet/)
+- [Python Exercises](https://programmingwithmosh.com/python/python-exercises-and-questions-for-beginners/)
+
+
+### Tutorials
 - [Dive into Python](http://www.diveintopython3.net)
 - [Official Tutorial](https://docs.python.org/3/tutorial/index.html)
 - [A Byte of Python](https://python.swaroopch.com)
