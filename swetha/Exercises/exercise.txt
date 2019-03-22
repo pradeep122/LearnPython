@@ -1,0 +1,181 @@
+Basics
+
+    What is an expression?
+    An expression is that when we combine two operands with an operator to produce a result. eg: c = a + b
+
+    What is a syntax error?
+    If we write the syntax wrong then we may get syntax error. eg: print("Hi there!".
+    Here in this example we missed to close the right paranthesis generating syntax error.
+
+    What is PEP8?
+    PEP8 is used to indent the code by deleting extra white spaces.
+
+    What does a linter do?
+    Linter analyses the code and shows us if there is any error before executing the program. 
+
+    What is the result of this expression: “*” * 10
+    **********
+
+    What is CPython?
+    How is CPython different from Jython?
+    How is CPython different from IronPython?
+
+
+
+Primitive Types
+
+    What is a variable?
+    A variable is a memory name which allocates some space in the memory to store a value in it. eg: a = 10.
+
+    What are the primitive built-in types in Python?
+    Number(Integer, Float, Complex number) 
+    String 
+    Boolean
+
+    When should we use “”” (tripe quotes) to define strings?
+    1. If we are writing data in multiple lines then we can use it.
+    eg: message = """ 
+    Hi
+    pradeep
+    How are you doing? """
+
+    2. If we use both double quotes and single quotes in the string then we can use """ to differentiate from them
+    eg: message = """ Nirvaan's Date of Birth is "August" 23rd 2018 """
+
+
+    Assuming (name = “John Smith”), what does name[1] return?
+    o
+
+    What about name[-2]?
+    t
+
+    What about name[1:-1]?
+    ohn Smit
+
+    How to get the length of name?
+    print(len(name))
+
+    What are the escape sequences in Python?
+    \n
+    \t
+    \"
+    \'
+
+    What is the result of f“{2+2}+{10%3}”?
+    41
+
+    Given (name = “john smith”), what will name.title() return?
+    john smith
+
+    What does name.strip() do?
+    Its strips or removes the extra white spaces from beginning and end of the name
+
+    What will name.find(“Smith”) return?
+    It return the index of the string which is 5
+
+    What will be the value of name after we call name.replace(“j”, “k”)?
+    "kohn smith"
+
+    How can we check to see if name contains “John”?
+    "John" in name
+
+    What are the 3 types of numbers in Python?
+    Integer(eg: 3)
+    Float (eg: 3.333)
+    Complex number (eg: 2 + 3j where 2 is real part and 3j is the imaginary part)
+
+
+
+Control Flow
+
+    What is the difference between 10 / 3 and 10 // 3?
+    10 / 3 gives the quotient with decimal part - 3.333333
+    10 // 3 gives the quotient without the decimal part - 3
+
+    What is the result of 10 ** 3?
+    ** is 10 to the power of 3 - 1000
+
+    Given (x = 1), what will be the value of after we run (x += 2)?
+    x += 2 is similar to x = x + 2 => 3
+
+    How can we round a number?
+    round()
+    eg: round(2.999) => 3
+
+    What is the result of float(1)?
+    1.0000
+
+    What is the result of bool(“False”)?
+    True
+
+    What are the falsy values in Python?
+    None
+    0
+    False
+    ""
+    What is the result of 10 == “10”?
+    False
+
+    What is the result of “bag” > “apple”?
+    True
+
+    What is the result of not(True or False)?
+    False
+
+    Under what circumstances does the expression 18 <= age < 65 evaluate to True?
+    eg: age 22 => (18 <= age) and (age < 65)
+    What does range(1, 10, 2) return?
+    1
+    3
+    5
+    7
+    9
+
+    Name 3 iterable objects in Python.
+    range
+    list(*numbers)
+    keyword arguments(**users)
+
+
+
+Functions
+
+    What is the difference between a parameter and an argument?
+    An argument is the values we pass it to the function declaration
+    A parameter is the actual values we pass it the function when we are calling it.
+
+    All functions in Python by default return …?
+    None
+
+    What are keyword arguments and when should we use them?
+    keyword aruments are the key-values pairs we use them to create tuples or records 
+
+    How can we make a parameter of a function optional?
+    eg: def add(x, y=1):
+            x = x + y
+        add(4)
+
+    What happens when we prefix a parameter with an asterisk (*)?
+    it generates a list
+
+    What about two asterisks (**)?
+    it is used to create key - value pairs
+
+    What is scope?
+    The life span of a variable.
+
+    What is the difference between local and global variables?
+    ->local variables are the variables which are declared in a method and their scope is limited to the block itself
+    and we cannot call the local variables out side the block.
+
+    ->Global variables are the variables which are declared oustide the function and the scope is limited to the entire program.
+    we can call the variables inside the function block or outside the function.
+    
+    Why is using the global statement a bad practice?
+    global statement is used to refer the global variable inside the function.
+    If we change the value inside the function, it changes the value of the global variable 
+    where ever we used it in the problem. So it results in getting errors or producing different output
+
+    
+
+
