@@ -2,10 +2,12 @@
 
 
 def maximum(x, y):
-    if x > y:
-        return x
-    if x < y:
-        return y
+    # if x > y:
+    #     return x
+    # if x < y:
+    #     return y
+    max = x if x > y else y
+    print(max)
 
 
 print(maximum(-1, -2))
@@ -42,16 +44,21 @@ print(fizz_buzz(9))
 # If the driver gets more than 12 points,
 # the function should print: “License suspended”
 
-# def speed_of_drivers(speed):
-#     points = 0
-#     extra_speed = 5
-#     if speed < 70:
-#         print("Ok")
-#     elif:
+def speed_of_drivers(speed):
+    points = 0
+    extra_speed = 5
+    if speed < 70:
+        return "Ok"
+    points = (speed - 70) // 5
+    if points > 12:
+        return "Licence suspended"
+    return f"{'Points:'} {points}"
 
 
-#     if points > 12:
-#         print("Licence suspended")
+print(speed_of_drivers(80))  # Points: 2
+print(speed_of_drivers(60))  # Ok
+print(speed_of_drivers(135))  # Licence suspended
+print(speed_of_drivers(70))  # Points: 1
 
 
 # Write a function called showNumbers that takes a parameter called limit.
@@ -66,13 +73,14 @@ print(fizz_buzz(9))
 
 def showNumbers(limit):
     for number in range(0, limit):
-        if number % 2 == 0:
-            print(f"{number} {'EVEN'}")
-        else:
-            print(f"{number} {'ODD'}")
+        # if number % 2 == 0:
+        #     print(f"{number} {'EVEN'}")
+        # else:
+        #     print(f"{number} {'ODD'}")
+        print(f"{number} {'EVEN'}" if number % 2 == 0 else f"{number} {'ODD'}")
 
 
-print(showNumbers(5))
+showNumbers(5)
 
 
 # Write a function that returns the sum of multiples
@@ -81,12 +89,14 @@ print(showNumbers(5))
 # the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
 
 def sum_of_multiples(limit):
-    for number in range(0, limit):
+    result = 0
+    for number in range(1, limit + 1):
         if (number % 3 == 0) or (number % 5 == 0):
-            print(number)
+            result += number
+    return result
 
 
-print(sum_of_multiples(20))
+print(sum_of_multiples(15))
 
 
 # Write a function called show_stars(rows).
@@ -99,22 +109,28 @@ print(sum_of_multiples(20))
 #     *****
 
 def show_stars(rows):
-    for number in range(rows):
+    for number in range(rows + 1):
         print("*" * number)
 
 
-print(show_stars(5))
+show_stars(5)
+show_stars(0)
+show_stars(1)
 
 
 # Write a function that prints all the prime numbers
 #  between 0 and limit where limit is a parameter.
-# def is_prime(input):
+def is_prime(input):
+    for number in range(2, input):
+        if input % number == 0:
+            return False
+    return True
 
 
-# def prime_numbers(limit):
-#     for number in range(0, limit):
-#         is_prime(number)
-#         print(number)
+def prime_numbers(limit):
+    for number in range(0, limit):
+        if is_prime(number):
+            print(number)
 
 
-# print(prime_numbers(20))
+prime_numbers(20)
