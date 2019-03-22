@@ -1,13 +1,13 @@
 Basics
 
     What is an expression?
-    An expression is that when we combine two operands with an operator to produce a result. eg: c = a + b
+    An expression is that when we combine two operands with an operator to produce a result. eg: a + b
 
     What is a syntax error?
     If we write the syntax wrong then we may get syntax error. eg: print("Hi there!".
     Here in this example we missed to close the right paranthesis generating syntax error.
 
-    What is PEP8?
+    ✖ What is PEP8? 
     PEP8 is used to indent the code by deleting extra white spaces.
 
     What does a linter do?
@@ -60,18 +60,19 @@ Primitive Types
     \t
     \"
     \'
+    \\
 
-    What is the result of f“{2+2}+{10%3}”?
-    41
+    ✖ What is the result of f“{2+2}+{10%3}”?
+    4+1
 
-    Given (name = “john smith”), what will name.title() return?
-    john smith
+    ✖ Given (name = “john smith”), what will name.title() return?
+    John Smith
 
     What does name.strip() do?
     Its strips or removes the extra white spaces from beginning and end of the name
 
-    What will name.find(“Smith”) return?
-    It return the index of the string which is 5
+    ✖ What will name.find("Smith") return?
+    It return the index of the string which is -1
 
     What will be the value of name after we call name.replace(“j”, “k”)?
     "kohn smith"
@@ -113,7 +114,7 @@ Control Flow
     0
     False
     ""
-    What is the result of 10 == “10”?
+    What is the result of 10 == "10"?
     False
 
     What is the result of “bag” > “apple”?
@@ -122,8 +123,10 @@ Control Flow
     What is the result of not(True or False)?
     False
 
-    Under what circumstances does the expression 18 <= age < 65 evaluate to True?
+    ✖ Under what circumstances does the expression 18 <= age < 65 evaluate to True?
     eg: age 22 => (18 <= age) and (age < 65)
+    for all intergers from 18 to 64
+    
     What does range(1, 10, 2) return?
     1
     3
@@ -131,50 +134,56 @@ Control Flow
     7
     9
 
-    Name 3 iterable objects in Python.
+    ✖ Name 3 iterable objects in Python.
+    String
     range
     list(*numbers)
     keyword arguments(**users)
 
-
+   
 
 Functions
 
-    What is the difference between a parameter and an argument?
-    An argument is the values we pass it to the function declaration
-    A parameter is the actual values we pass it the function when we are calling it.
+    ✖ What is the difference between a parameter and an argument?
+    An parameter is the values we pass it to the function declaration
+    A arguments is the actual values we pass it the function when we are calling it.
 
     All functions in Python by default return …?
     None
 
-    What are keyword arguments and when should we use them?
-    keyword aruments are the key-values pairs we use them to create tuples or records 
+    ✖ What are keyword arguments and when should we use them?
+    keyword aruments named arguments , can be used for better readability of the code
+    Eg: def increment(number, by):
+            return number + by
+        increment(5, 2)// normal invocation
+        increment(5, by=2) // using keyword arguments
 
     How can we make a parameter of a function optional?
     eg: def add(x, y=1):
             x = x + y
         add(4)
+        add(4,3)
 
-    What happens when we prefix a parameter with an asterisk (*)?
-    it generates a list
+    ✖ What happens when we prefix a parameter with an asterisk (*)?
+    it generates a tuple argument
 
     What about two asterisks (**)?
-    it is used to create key - value pairs
+    it is used to create key - value pairs (dictionary argument)
 
     What is scope?
     The life span of a variable.
 
     What is the difference between local and global variables?
-    ->local variables are the variables which are declared in a method and their scope is limited to the block itself
-    and we cannot call the local variables out side the block.
+    ->local variables are the variables which are declared in a method and their scope is limited to the method block itself
+    and we cannot call the local variables out side the method block.
 
-    ->Global variables are the variables which are declared oustide the function and the scope is limited to the entire program.
-    we can call the variables inside the function block or outside the function.
+    ->Global variables are the variables which are declared oustide the method and the scope extends to the entire program.
+    we can call the variables inside the method block or outside the method.
     
     Why is using the global statement a bad practice?
     global statement is used to refer the global variable inside the function.
     If we change the value inside the function, it changes the value of the global variable 
-    where ever we used it in the problem. So it results in getting errors or producing different output
+    where ever we used it in the program. So it results in getting errors or producing different output
 
     
 
