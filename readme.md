@@ -6,9 +6,16 @@
 
 - [Python Tutorials for Beginners - Learn Python Online](https://www.youtube.com/watch?v=yE9v9rt6ziw)
 - [Learn Python 3 for Machine Learning & Web Development [2019] - Complete Python Tutorial](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
+- [Learn Python - Full Course for Beginners](https://www.youtube.com/watch?v=rfscVS0vtbw&t=2s)
+- [Python Django Web Framework - Full Course for Beginners](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+- [MongoDB with Python Crash Course - Tutorial for Beginners](https://www.youtube.com/watch?v=E-1xI85Zog8)
+- [Python Algorithms for Interviews](https://www.youtube.com/watch?v=p65AHm9MX80)
 
 - [Python Cheatsheet](https://programmingwithmosh.com/python/python-3-cheat-sheet/)
+
+### Excercises
 - [Python Exercises](https://programmingwithmosh.com/python/python-exercises-and-questions-for-beginners/)
+- [Exercism](https://exercism.io/tracks/python)
 
 
 ### Tutorials
