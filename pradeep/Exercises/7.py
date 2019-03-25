@@ -9,7 +9,7 @@ def print_primes(limit):
 
 
 def is_prime(prime):
-    for number in range(2, prime // 2):
+    for number in range(2, prime // 2 + 1):
         if prime % number == 0:
             return False
     return True

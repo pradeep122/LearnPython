@@ -6,7 +6,7 @@ def maximum(x, y):
     #     return x
     # if x < y:
     #     return y
-    max = x if x > y else y
+    max = x if x >= y else y
     print(max)
 
 
