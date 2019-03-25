@@ -5,3 +5,9 @@ print("Hello World!")
 x = 1
 y = 2
 unit_price = 3
+
+print("VijayaLakshmi Kalidindi")
+print("O----")
+print(" ||||")
+print("*" * 10)
+print("@" * 10)
