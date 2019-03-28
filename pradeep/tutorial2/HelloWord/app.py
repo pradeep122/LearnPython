@@ -17,20 +17,20 @@ age = 20
 is_new = True
 
 # Console Input
-# name = input("What is your name? ")
-# color = input("What is your favourite color? ")
-# print(name + ' likes ' + color)
+name = input("What is your name? ")
+color = input("What is your favourite color? ")
+print(name + ' likes ' + color)
 
 # Type Conversion
-# birth_year = input('Birth year: ')
-# print(type(birth_year))
-# age = 2019 - int(birth_year)
-# print(type(age))
-# print(age)
+birth_year = input('Birth year: ')
+print(type(birth_year))
+age = 2019 - int(birth_year)
+print(type(age))
+print(age)
 
-# weights_lbs = input('Weight (lbs): ')
-# weight_kg = 0.4535924 * float(weights_lbs)
-# print('Weight (kgs): ' + str(weight_kg))
+weights_lbs = input('Weight (lbs): ')
+weight_kg = 0.4535924 * float(weights_lbs)
+print('Weight (kgs): ' + str(weight_kg))
 
 # Strings
 course1 = "Python's course for Beginners"
