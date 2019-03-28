@@ -1,3 +1,5 @@
+import random
+
 # Exercise - Guessing Game
 
 number = random.randint(1, 10)
