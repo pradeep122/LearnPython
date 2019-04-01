@@ -46,7 +46,7 @@ print(numbers.count(1))  # 2
 
 # sort() - to sort the items in the list.
 # sort() doesn't take any value.
-# Its an object in python represents absence of a value.
+# "None" - Its an object in python represents absence of a value.
 print(numbers.sort())  # None (it doesn't returns any value it simply sorts)
 # Instead of printing we simply call
 numbers.sort()
