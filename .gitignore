@@ -2,3 +2,6 @@
 contents.txt
 .DS_Store
 *.DS_Store
+**__pycache__**
+sandeep/.DS_Store
+sandeep/Tutorial-1-Examples/.DS_Store
