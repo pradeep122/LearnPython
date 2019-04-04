@@ -1,2 +1,4 @@
 .vscode/settings.json
 contents.txt
+.DS_Store
+*.DS_Store
