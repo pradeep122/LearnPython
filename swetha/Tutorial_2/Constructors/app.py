@@ -15,4 +15,6 @@ class Point:
 
 
 point = Point(10, 20)
+# Assigning new value to x
+point.x = 11
 print(point.x)
