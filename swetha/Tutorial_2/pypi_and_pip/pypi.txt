@@ -1,0 +1,3 @@
+pypi - The python package index
+pypi.org
+pip - is used to install the package
