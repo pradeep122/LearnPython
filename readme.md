@@ -64,3 +64,8 @@ If mac has both python2 and python3 installed, the correct pip command should be
 # Python3
 > sudo pip3 install openpyxl
 ```
+
+### Installation of an Environment called "jupyter"
+
+[Anaconda Distribution](https://www.anaconda.com/distribution/)
+Download - Python 3.7 version for macOS Installer
