@@ -1,0 +1,8 @@
+Libraries:
+1. Numpy - It provides a multi-dimensional array.
+2. Pandas - It is a data analysis library it provides a concept called Data Frame.
+Data Frame is two dimensional data structure similar to exce spreadsheet.
+3. MatPlotLib - It is two dimensional plotting library for greating graphs on plots.
+4. SciKit Learn - It provides all these common algorithms like:
+    - Decision Trees.
+    - Neural Networks and so on.

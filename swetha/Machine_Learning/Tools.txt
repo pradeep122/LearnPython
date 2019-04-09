@@ -1,0 +1,3 @@
+Tools:
+
+jupyter - For writing code  in machine learning.
