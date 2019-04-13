@@ -1,5 +1,6 @@
 import csv
 import os
+import math
 
 # def readCSVFile(filename) returns (month_year, totalCost)
 # - open the file
@@ -16,7 +17,7 @@ def readCsvFile(filename):
         for row in reader:
             if row[3] == 'LinkedLineItem' and row[12] == 'AmazonES':
                 totalCost += float(row[28])
-        return (f"Month_Year: {filename[:-4]},Total Cost: {totalCost}")
+        return filename[:-4], totalCost
         csvFile.close()
 
 
@@ -27,6 +28,8 @@ def readCsvFile(filename):
 folderName = "CSV_Files"
 path = "/Users/deepster/Sites/LearnPython/swetha/YantraProject/CSV_Files"
 
+csvData = []
+
 
 def processFolder(folderName):
     csvFiles = [f for f in os.listdir(path) if f.endswith(".csv")]
@@ -36,4 +39,30 @@ def processFolder(folderName):
     return arr
 
 
-print(processFolder(folderName))
+# To print MONTH_YEAR and MONTHLY_COST headers in Output csv file.
+# print("Month Year  --  Monthly_Cost")
+csvData.append(["Month_Year", "Monthly Cost"])
+totalCost = 0
+for tuple in processFolder(folderName):
+    # print(f"({tuple[0]} -- {tuple[1]})")
+    csvData.append([tuple[0], tuple[1]])
+    totalCost += tuple[1]
+
+roundedCost = math.ceil(totalCost * 100) / 100
+
+# print(f"Total Cost - {roundedCost}")
+csvData.append(["Total Cost", roundedCost])
+
+with open(path + '/summary.csv', 'w') as csvFile:
+    writer = csv.writer(csvFile)
+    writer.writerows(csvData)
+
+csvFile.close()
+
+
+# To get the output in csv file
+
+
+# Clean Code
+# Monthly cost should be rounded to 2 decimals
+# Month Year shoud be formatted as "Feb, 2018"
