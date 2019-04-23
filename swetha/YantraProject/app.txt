@@ -1,30 +1,12 @@
 import csv
 import os
 import math
-folderName = "CSV_Files"
-path = "/Users/deepster/Sites/LearnPython/swetha/YantraProject/CSV_Files"
-csvData = []
-months = {'1': 'Jan',
-          '2': 'Feb',
-          '3': 'Mar',
-          '4': 'Apr',
-          '5': 'May',
-          '6': 'Jun',
-          '7': 'Jul',
-          '8': 'Aug',
-          '9': 'Sep',
-          '10': 'Oct',
-          '11': 'Nov',
-          '12': 'Dec'}
 
-
-def formatOfNumber(number):
-    return float(format(float(number), '.2f'))
-
-
-def extractMonthYear(filename):
-    result = filename.split('_')
-    return (months[result[1]], result[2])
+# def readCSVFile(filename) returns (month_year, totalCost)
+# - open the file
+# - go through every row and pick the ones with AmazonES product code
+# - extract the total cost  and keep addig it to the final cose
+# return month_year string and total cost
 
 
 def readCsvFile(filename):
@@ -39,6 +21,16 @@ def readCsvFile(filename):
         csvFile.close()
 
 
+# def processFolder(foldername) return [(month,year, totalCost)]
+# - extract all  csv files in the folder
+# - for every csv file call readCSVFile
+# - Add all tuples in an array and return
+folderName = "CSV_Files"
+path = "/Users/deepster/Sites/LearnPython/swetha/YantraProject/CSV_Files"
+
+csvData = []
+
+
 def processFolder(folderName):
     csvFiles = [f for f in os.listdir(path) if f.endswith(".csv")]
     arr = []
@@ -47,22 +39,28 @@ def processFolder(folderName):
     return arr
 
 
+# To print MONTH_YEAR and MONTHLY_COST headers in Output csv file.
+# print("Month Year  --  Monthly_Cost")
 csvData.append(["Month_Year", "Monthly Cost"])
 totalCost = 0
 for tuple in processFolder(folderName):
-    csvData.append([extractMonthYear(tuple[0]), formatOfNumber(tuple[1])])
-    # print(formatOfNumber(tuple[1]))
+    # print(f"({tuple[0]} -- {tuple[1]})")
+    csvData.append([tuple[0], tuple[1]])
     totalCost += tuple[1]
 
 roundedCost = math.ceil(totalCost * 100) / 100
-# print(formatOfNumber(roundedCost))
-csvData.append(["Total Cost", formatOfNumber(roundedCost)])
+
+# print(f"Total Cost - {roundedCost}")
+csvData.append(["Total Cost", roundedCost])
 
 with open(path + '/summary.csv', 'w') as csvFile:
     writer = csv.writer(csvFile)
     writer.writerows(csvData)
 
 csvFile.close()
+
+
+# To get the output in csv file
 
 
 # Clean Code
