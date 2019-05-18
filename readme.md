@@ -69,3 +69,14 @@ If mac has both python2 and python3 installed, the correct pip command should be
 
 [Anaconda Distribution](https://www.anaconda.com/distribution/)
 Download - Python 3.7 version for macOS Installer
+
+### Installation of a Framework called "Django"
+
+If mac has both python2 and python3 installed, the correct pip command should be used for installing packages
+
+```
+# Python2
+> sudo pip install Django==2.2.1
+# Python3
+> sudo pip3 install Django==2.2.1
+```
