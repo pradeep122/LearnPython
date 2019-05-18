@@ -1,0 +1,9 @@
+Django is a framework
+The framework is essentially a library of reusable modules.
+These modules provides functionality for common tasks.
+Example, In Django framework we have modules to work with http requests urls, sessions, cookies etc;  
+A Framework apart from providing these modules it also provides a structure for each application.
+It tells us what folders or files we should have in our project.
+It provides a consistency among various django projects.
+
+A View Function is basically a function that gets called by django when the user navigates to particular page.
